@@ -73,7 +73,10 @@ if st.button('Predict Hate Speech'):
     
     # predict the hate speech
     prediction = model.classify(FreqDist(paragraph))
-        
-    
+
+    if(prediction == 'hateful'):
+        st.error('The paragraph/text is hateful.', icon='🚨')
+    else:
+        st.success('The paragraph/text is non-hateful.', icon='✅')
     # display the prediction
-    st.write(f'The paragraph is a {prediction}')
+    # st.write(f'The paragraph is a {prediction}')
