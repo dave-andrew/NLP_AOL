@@ -33,7 +33,7 @@ def get_words(paragraph):
     words = [LEMMATIZER.lemmatize(word) for word in words]
     return words
 
-st.title('NLP AOL')
+st.title('🤬 Predict Hate Speech')
 
 # make an input paragraph
 tweet = st.text_area('Enter a tweet:')
