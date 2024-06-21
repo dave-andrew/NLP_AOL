@@ -28,6 +28,7 @@ dt_data = {
 dt_df = pd.DataFrame(dt_data)
 st.table(dt_df)
 st.markdown("<hr>", unsafe_allow_html=True)
+
 st.subheader('Naive Bayes')
 st.image('Confusion_Naive.png', caption='Naive Bayes Confusion Matrix')
 st.markdown(
@@ -48,6 +49,7 @@ nb_data = {
 }
 nb_df = pd.DataFrame(nb_data)
 st.table(nb_df)
+st.markdown("<hr>", unsafe_allow_html=True)
 
 st.subheader('Linear SVC')
 st.image('Confusion_Linear_SVC.png', caption='Linear SVC Confusion Matrix')
@@ -69,6 +71,7 @@ svc_data = {
 }
 svc_df = pd.DataFrame(svc_data)
 st.table(svc_df)
+st.markdown("<hr>", unsafe_allow_html=True)
 
 st.subheader('ADA Boost')
 st.image('Confusion_ADA.png', caption='ADA Boost Confusion Matrix')

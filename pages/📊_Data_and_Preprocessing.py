@@ -15,6 +15,7 @@ st.markdown(
 )
 st.image('dataset_1.png')
 st.image('dataset_2.png')
+st.markdown("<hr>", unsafe_allow_html=True)
 
 # st.components.v1.iframe("https://www.kaggle.com/datasets/waalbannyantudre/hate-speech-detection-curated-dataset?select=HateSpeechDataset.csv", height=400, scrolling=True)
 
