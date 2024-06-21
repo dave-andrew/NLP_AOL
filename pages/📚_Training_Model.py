@@ -2,8 +2,9 @@ import streamlit as st
 
 st.set_page_config(
     page_title="Training Models",
+    page_icon="📚"
 )
-st.title('Training Models')
+st.title('📚 Training Models')
 st.subheader('Decision Tree')
 st.markdown(
   '''**Decision Tree** adalah algoritma klasifikasi yang bekerja dengan cara membagi data menjadi subset-subset berdasarkan aturan tertentu, menghasilkan struktur pohon yang bercabang.

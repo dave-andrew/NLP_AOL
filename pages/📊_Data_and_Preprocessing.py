@@ -2,14 +2,16 @@ import streamlit as st
 
 st.set_page_config(
     page_title="Data and Preprocessing",
+    page_icon="📊"
 )
-st.title('Data and Preprocessing')
+st.title('📊 Data and Preprocessing')
 
 st.subheader('Dataset')
 st.markdown(
-  '''Dataset yang digunakan diambil dari Kaggle untuk mengklasifikasikan apakah suatu teks merupakan hate-speech atau non-hate-speech.
+  '''Dataset yang digunakan diambil dari Kaggle untuk mengklasifikasikan apakah suatu teks merupakan ***hate-speech*** atau ***non-hate-speech***.
   
-  Link dataset: https://www.kaggle.com/datasets/waalbannyantudre/hate-speech-detection-curated-dataset?select=HateSpeechDataset.csv'''
+  **Link dataset:**
+  https://www.kaggle.com/datasets/waalbannyantudre/hate-speech-detection-curated-dataset?select=HateSpeechDataset.csv'''
 )
 st.image('dataset_1.png')
 st.image('dataset_2.png')
@@ -18,7 +20,7 @@ st.image('dataset_2.png')
 
 st.subheader('Preprocessing')
 st.markdown(
-  '''Tahapan preprocessing yang dilakukan berupa:
+  '''Tahapan **preprocessing** yang dilakukan berupa:
   1. Compress: mengkompres tiga atau lebih karakter yang berulang dengan menggunakan regular expression :blue-background[re.sub].
   2. Tokenization: memecah kalimat menjadi kata terpisah dengan menggunakan :blue-background[word_tokenize] dari :blue-background[nltk].
   3. Lowercasing: mengubah semua kata menjadi huruf kecil.
