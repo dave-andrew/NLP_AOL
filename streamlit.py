@@ -45,13 +45,13 @@ if st.button('Predict Hate Speech'):
     
     # load the model
     if model == 'Decision Tree':
-        model = joblib.load('/decisionTree.pkl')
+        model = joblib.load('decisionTree.pkl')
     elif model == 'Linear Regression':
-        model = joblib.load('/linear.pkl')
+        model = joblib.load('linear.pkl')
     elif model == 'Naive Bayes':
-        model = joblib.load('/naive.pkl')
+        model = joblib.load('naive.pkl')
     elif model == 'Linear SVC':
-        model = joblib.load('/linearsvc.pkl')
+        model = joblib.load('linearsvc.pkl')
     else:
         st.write('Model not found')
     
