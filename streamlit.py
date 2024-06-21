@@ -1,4 +1,4 @@
-import Home as st
+import streamlit as st
 import joblib
 import re
 import string
