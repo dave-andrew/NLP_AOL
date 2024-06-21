@@ -62,4 +62,4 @@ if st.button('Predict Hate Speech'):
     prediction = model.classify(FreqDist(paragraph))
     
     # display the prediction
-    st.write(f'The paragraph is {prediction[0]}')
+    st.write(f'The paragraph is a {prediction[0]}')

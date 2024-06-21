@@ -1,6 +1,6 @@
-streamlit
-pickle
 re
 string
 nltk
 pandas
+streamlit
+pickle
