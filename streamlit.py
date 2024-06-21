@@ -39,24 +39,32 @@ st.title('NLP AOL')
 tweet = st.text_area('Enter a tweet:')
 
 # make a dropdown to choose the model
-modelType = st.selectbox('Choose a model:', ['Decision Tree', 'Linear Regression', 'Naive Bayes', 'Linear SVC', 'ADA Boost', 'Random Forest'])
+modelType = st.selectbox('Choose a model:', [
+    # 'Decision Tree',
+    # 'Linear Regression', 
+    'Naive Bayes', 
+    'Linear SVC', 
+    'ADA Boost', 
+    # 'Random Forest'
+    ])
+
 model = None
 # make a button for predicting hate speech
 if st.button('Predict Hate Speech'):
     
     # load the model
-    if modelType == 'Decision Tree':
-        model = joblib.load('decisionTree (1).pkl')
-    elif modelType == 'Linear Regression':
-        model = joblib.load('linear.pkl')
+    if modelType == 'ADA Boost':
+        model = joblib.load('adaboost.pkl')
+    # elif modelType == 'Decision Tree':
+    #     model = joblib.load('decisionTree (1).pkl')
+    # elif modelType == 'Linear Regression':
+    #     model = joblib.load('linear.pkl')
     elif modelType == 'Naive Bayes':
         model = joblib.load('naive.pkl')
     elif modelType == 'Linear SVC':
         model = joblib.load('linearsvc.pkl')
-    elif modelType == 'ADA Boost':
-        model = joblib.load('adaboost.pkl')
-    elif modelType == 'Random Forest':
-        model = joblib.load('rfc.pkl')
+    # elif modelType == 'Random Forest':
+    #     model = joblib.load('rfc.pkl')
     else:
         st.write('Model not found')
     
