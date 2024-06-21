@@ -15,7 +15,7 @@ import pickle
 # nltk.download('punkt')
 # nltk.download('wordnet')
 
-STOPWORDS = stopwords.words('english')
+STOPWORDS = stopwords.words('english')  
 STEMMER = PorterStemmer()
 LEMMATIZER = WordNetLemmatizer()
 
