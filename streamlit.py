@@ -63,7 +63,7 @@ if st.button('Predict Hate Speech'):
     elif modelType == 'Naive Bayes':
         model = joblib.load('naive.pkl')
     elif modelType == 'Linear SVC':
-        model = pickle.load('linear (1).pkl')
+        model = joblib.load('linear (1).pkl')
     # elif modelType == 'Random Forest':
     #     model = pickle.load('rfc (1).pkl')
     else:
