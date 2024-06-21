@@ -38,23 +38,22 @@ st.title('NLP AOL')
 tweet = st.text_area('Enter a tweet:')
 
 # make a dropdown to choose the model
-model = st.selectbox('Choose a model:', ['ADA Boost', 'Decision Tree', 'Linear Regression', 'Naive Bayes', 'Linear SVC'])
+model = st.selectbox('Choose a model:', ['Decision Tree', 'Linear Regression', 'Naive Bayes', 'Linear SVC'])
 
 # make a button for predicting hate speech
 if st.button('Predict Hate Speech'):
     
     # load the model
-    if model == 'ADA Boost':
-        model = joblib.load('adaboost.pickle')
-    elif model == 'Decision Tree':
-        model = joblib.load('decisionTree.pickle')
+    if model == 'Decision Tree':
+        model = joblib.load('/decisionTree.pkl')
     elif model == 'Linear Regression':
-        model = joblib.load('linear.pickle')
+        model = joblib.load('/linear.pkl')
     elif model == 'Naive Bayes':
-        model = joblib.load('naive.pickle')
+        model = joblib.load('/naive.pkl')
     elif model == 'Linear SVC':
-        model = joblib.load('linearsvc.pickle')
-    
+        model = joblib.load('/linearsvc.pkl')
+    else:
+        st.write('Model not found')
     
     paragraph = get_words(tweet)
     
