@@ -9,10 +9,10 @@ from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer, WordNetLemmatizer
 from nltk.probability import FreqDist
 
-nltk.download('averaged_perceptron_tagger')
-nltk.download('stopwords')
-nltk.download('punkt')
-nltk.download('wordnet')
+# nltk.download('averaged_perceptron_tagger')
+# nltk.download('stopwords')
+# nltk.download('punkt')
+# nltk.download('wordnet')
 
 STOPWORDS = stopwords.words('english')
 STEMMER = PorterStemmer()
