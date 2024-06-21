@@ -1,5 +1,5 @@
 import streamlit as st
-import pickle
+import joblib
 import re
 import string
 import pandas as pd
@@ -45,15 +45,15 @@ if st.button('Predict Hate Speech'):
     
     # load the model
     if model == 'ADA Boost':
-        model = pickle.load('models/adaboost.pickle')
+        model = joblib.load('models/adaboost.pickle')
     elif model == 'Decision Tree':
-        model = pickle.load('models/decisionTree.pickle')
+        model = joblib.load('models/decisionTree.pickle')
     elif model == 'Linear Regression':
-        model = pickle.load('models/linear.pickle')
+        model = joblib.load('models/linear.pickle')
     elif model == 'Naive Bayes':
-        model = pickle.load('models/naive.pickle')
+        model = joblib.load('models/naive.pickle')
     elif model == 'Linear SVC':
-        model = pickle.load('models/linearsvc.pickle')
+        model = joblib.load('models/linearsvc.pickle')
     
     
     paragraph = get_words(tweet)
