@@ -46,8 +46,7 @@ if st.button('Predict Hate Speech'):
     
     # load the model
     if modelType == 'Decision Tree':
-        with open('decisionTree.pkl', 'rb') as f:
-            model = joblib.load(f)
+        model = joblib.load('decisionTree (1).pkl')
     elif modelType == 'Linear Regression':
         model = joblib.load('linear.pkl')
     elif modelType == 'Naive Bayes':
