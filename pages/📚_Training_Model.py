@@ -9,6 +9,18 @@ st.title('📚 Training Models')
 st.subheader('Decision Tree')
 st.image('Confusion_Decision.png', caption='Decision Tree Confusion Matrix', width=400)
 st.markdown(
+    """
+    <style>
+    div.stImage > img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+st.markdown(
   '''**Decision Tree** adalah algoritma klasifikasi yang bekerja dengan cara membagi data menjadi subset-subset berdasarkan aturan tertentu, menghasilkan struktur pohon yang bercabang.
 
   **Cara Kerja:**
