@@ -80,3 +80,5 @@ if st.button('Predict Hate Speech'):
         st.success('The paragraph/text is non-hateful.', icon='✅')
     # display the prediction
     # st.write(f'The paragraph is a {prediction}')
+    
+    # test
