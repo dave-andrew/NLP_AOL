@@ -54,7 +54,7 @@ if st.button('Predict Hate Speech'):
     
     # load the model
     if modelType == 'ADA Boost':
-        model = pickle.load('adaboost (1).pkl')
+        model = pickle.load('adaboost (2).pkl')
     # elif modelType == 'Decision Tree':
     #     model = joblib.load('decisionTree (1).pkl')
     # elif modelType == 'Linear Regression':
