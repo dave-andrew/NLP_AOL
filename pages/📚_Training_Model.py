@@ -7,19 +7,7 @@ st.set_page_config(
 )
 st.title('📚 Training Models')
 st.subheader('Decision Tree')
-st.image('Confusion_Decision.png', caption='Decision Tree Confusion Matrix', width=400)
-st.markdown(
-    """
-    <style>
-    div.stImage > img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+st.image('Confusion_Decision.png', caption='Decision Tree Confusion Matrix')
 st.markdown(
   '''**Decision Tree** adalah algoritma klasifikasi yang bekerja dengan cara membagi data menjadi subset-subset berdasarkan aturan tertentu, menghasilkan struktur pohon yang bercabang.
 
@@ -39,7 +27,7 @@ dt_data = {
 }
 dt_df = pd.DataFrame(dt_data)
 st.table(dt_df)
-
+st.markdown("<hr>", unsafe_allow_html=True)
 st.subheader('Naive Bayes')
 st.image('Confusion_Naive.png', caption='Naive Bayes Confusion Matrix')
 st.markdown(
