@@ -56,13 +56,10 @@ if st.button('Predict Hate Speech'):
         st.write('Model not found')
     
     paragraph = get_words(tweet)
-    prediction = None
     
     # predict the hate speech
-    if modelType != 'Decision Tree':
-        prediction = model.classify(FreqDist(paragraph))
-    else:
-        prediction = model.predict(FreqDist(paragraph))
+    prediction = model.classify(FreqDist(paragraph))
+        
     
     # display the prediction
     st.write(f'The paragraph is a {prediction}')
