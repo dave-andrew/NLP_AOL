@@ -55,15 +55,15 @@ if st.button('Predict Hate Speech'):
     # load the model
     if modelType == 'ADA Boost':
         with open('adaboost (2).pkl', 'rb') as f:
-            model = pickle.load(f)
+            model = joblib.load(f)
     # elif modelType == 'Decision Tree':
     #     model = joblib.load('decisionTree (1).pkl')
     # elif modelType == 'Linear Regression':
     #     model = joblib.load('linear.pkl')
     elif modelType == 'Naive Bayes':
-        model = pickle.load('naive.pkl')
+        model = joblib.load('naive.pkl')
     elif modelType == 'Linear SVC':
-        model = pickle.load('linear (1).pkl')
+        model = joblib.load('linear (1).pkl')
     # elif modelType == 'Random Forest':
     #     model = pickle.load('rfc (1).pkl')
     else:
