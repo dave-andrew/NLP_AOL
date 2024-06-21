@@ -8,6 +8,7 @@ from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer, WordNetLemmatizer
 from nltk.probability import FreqDist
+import pickle
 
 # nltk.download('averaged_perceptron_tagger')
 # nltk.download('stopwords')
@@ -45,7 +46,8 @@ if st.button('Predict Hate Speech'):
     
     # load the model
     if modelType == 'Decision Tree':
-        model = joblib.load('decisionTree.pkl')
+        with open('decisionTree.pkl', 'rb') as f:
+            model = pickle.load(f)
     elif modelType == 'Linear Regression':
         model = joblib.load('linear.pkl')
     elif modelType == 'Naive Bayes':
@@ -53,9 +55,11 @@ if st.button('Predict Hate Speech'):
     elif modelType == 'Linear SVC':
         model = joblib.load('linearsvc.pkl')
     elif modelType == 'ADA Boost':
-        model = joblib.load('adaboost.pkl')
+        with open('adaboost.pkl', 'rb') as f:
+            model = pickle.load(f)
     elif modelType == 'Random Forest':
-        model = joblib.load('rfc.pkl')
+        with open('rfc.pkl', 'rb') as f:
+            model = pickle.load(f)
     else:
         st.write('Model not found')
     
