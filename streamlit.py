@@ -38,27 +38,31 @@ st.title('NLP AOL')
 tweet = st.text_area('Enter a tweet:')
 
 # make a dropdown to choose the model
-model = st.selectbox('Choose a model:', ['Decision Tree', 'Linear Regression', 'Naive Bayes', 'Linear SVC'])
-
+modelType = st.selectbox('Choose a model:', ['Decision Tree', 'Linear Regression', 'Naive Bayes', 'Linear SVC'])
+model = None
 # make a button for predicting hate speech
 if st.button('Predict Hate Speech'):
     
     # load the model
-    if model == 'Decision Tree':
+    if modelType == 'Decision Tree':
         model = joblib.load('decisionTree.pkl')
-    elif model == 'Linear Regression':
+    elif modelType == 'Linear Regression':
         model = joblib.load('linear.pkl')
-    elif model == 'Naive Bayes':
+    elif modelType == 'Naive Bayes':
         model = joblib.load('naive.pkl')
-    elif model == 'Linear SVC':
+    elif modelType == 'Linear SVC':
         model = joblib.load('linearsvc.pkl')
     else:
         st.write('Model not found')
     
     paragraph = get_words(tweet)
+    prediction = None
     
     # predict the hate speech
-    prediction = model.classify(FreqDist(paragraph))
+    if modelType != 'Decision Tree':
+        prediction = model.classify(FreqDist(paragraph))
+    else:
+        prediction = model.predict(FreqDist(paragraph))
     
     # display the prediction
     st.write(f'The paragraph is a {prediction}')
