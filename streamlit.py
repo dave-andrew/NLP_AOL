@@ -45,15 +45,15 @@ if st.button('Predict Hate Speech'):
     
     # load the model
     if model == 'ADA Boost':
-        model = joblib.load('models/adaboost.pickle')
+        model = joblib.load('adaboost.pickle')
     elif model == 'Decision Tree':
-        model = joblib.load('models/decisionTree.pickle')
+        model = joblib.load('decisionTree.pickle')
     elif model == 'Linear Regression':
-        model = joblib.load('models/linear.pickle')
+        model = joblib.load('linear.pickle')
     elif model == 'Naive Bayes':
-        model = joblib.load('models/naive.pickle')
+        model = joblib.load('naive.pickle')
     elif model == 'Linear SVC':
-        model = joblib.load('models/linearsvc.pickle')
+        model = joblib.load('linearsvc.pickle')
     
     
     paragraph = get_words(tweet)
