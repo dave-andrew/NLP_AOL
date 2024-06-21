@@ -33,6 +33,10 @@ def get_words(paragraph):
     words = [LEMMATIZER.lemmatize(word) for word in words]
     return words
 
+st.set_page_config(
+    page_title="Predict Hate Speech",
+    page_icon="🤬"
+)
 st.title('🤬 Predict Hate Speech')
 
 # make an input paragraph
