@@ -29,3 +29,10 @@ st.markdown(
   6. Stemming: menggunakan :blue-background[PorterStemmer] untuk mengubah kata yang ada ke bentuk dasar sehingga mengurangi variasi.
   7. Lemmatization: menggunakan :blue-background[WordNetLemmatizer] untuk mengubah kata menjadi bentuk kamusnya.'''
 )
+st.markdown("<hr>", unsafe_allow_html=True)
+
+st.subheader('Source Code')
+st.markdown(
+  '''Link .ipynb:
+  https://colab.research.google.com/drive/1r8rkNERa4kD-bCl7mXM4oKLb87EnX38d?usp=sharing'''
+)
