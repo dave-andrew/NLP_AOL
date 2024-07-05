@@ -9,6 +9,7 @@ from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer, WordNetLemmatizer
 from nltk.probability import FreqDist
 import pickle
+from sklearn.ensemble import AdaBoostClassifier
 
 nltk.download('averaged_perceptron_tagger')
 nltk.download('stopwords')
@@ -54,7 +55,8 @@ if st.button('Predict Hate Speech'):
     
     # load the model
     if modelType == 'ADA Boost':
-        model = joblib.load('adaboost.joblib')
+        model = AdaBoostClassifier()
+        model.load('adaboost.joblib')
     # elif modelType == 'Decision Tree':
     #     model = joblib.load('decisionTree (1).pkl')
     # elif modelType == 'Linear Regression':
