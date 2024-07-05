@@ -4,10 +4,10 @@ import re
 import string
 import pandas as pd
 import nltk
-nltk.download('averaged_perceptron_tagger')
-nltk.download('stopwords')
-nltk.download('punkt')
-nltk.download('wordnet')
+# nltk.download('averaged_perceptron_tagger')
+# nltk.download('stopwords')
+# nltk.download('punkt')
+# nltk.download('wordnet')
 
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
