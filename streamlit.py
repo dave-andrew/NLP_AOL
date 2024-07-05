@@ -55,8 +55,7 @@ if st.button('Predict Hate Speech'):
     
     # load the model
     if modelType == 'ADA Boost':
-        model = AdaBoostClassifier()
-        model.load('adaboost.joblib')
+        model = joblib.load('adaboost.joblib')
     # elif modelType == 'Decision Tree':
     #     model = joblib.load('decisionTree (1).pkl')
     # elif modelType == 'Linear Regression':
