@@ -20,7 +20,7 @@ st.markdown(
   3. Klasifikasi Teks Baru: Mengikuti cabang-cabang pohon berdasarkan nilai atribut teks baru untuk mencapai daun dan menggunakan label daun sebagai prediksi kelas.
   '''
 )
-
+st.markdown("<hr>", unsafe_allow_html=True)
 st.markdown(
   '''
   **Decision Tree** selalu diawali dengan pembuatan root node.\n
@@ -72,4 +72,3 @@ dt_data = {
 }
 dt_df = pd.DataFrame(dt_data)
 st.table(dt_df)
-st.markdown("<hr>", unsafe_allow_html=True)

@@ -31,9 +31,10 @@ st.markdown(
 
   **Cara Kerja:**
   1. Pencarian Hyperplane: Algoritma mencari hyperplane linier yang memisahkan data *"hate-speech"* dan *"non-hate-speech"* dengan margin maksimum. Margin adalah jarak minimum antara hyperplane dan data poin terdekat dari setiap kelas.
-  2. Klasifikasi Teks Baru: Untuk mengklasifikasikan teks baru, algoritma menghitung jaraknya dari hyperplane. Jika teks baru berada di satu sisi hyperplane, maka diklasifikasikan ke kelas di sisi tersebut.
-  
-  **LinearSVC Formula:**
+  2. Klasifikasi Teks Baru: Untuk mengklasifikasikan teks baru, algoritma menghitung jaraknya dari hyperplane. Jika teks baru berada di satu sisi hyperplane, maka diklasifikasikan ke kelas di sisi tersebut.''')
+
+st.markdown("<hr>", unsafe_allow_html=True)
+st.markdown('''**LinearSVC Formula:**
   Goal dari LinearSVC adalah untuk menemukan hyperplane yang memisahkan data dengan margin maksimum. Hyperplane ini didefinisikan sebagai:
   '''
 )
@@ -83,4 +84,3 @@ svc_data = {
 }
 svc_df = pd.DataFrame(svc_data)
 st.table(svc_df)
-st.markdown("<hr>", unsafe_allow_html=True)

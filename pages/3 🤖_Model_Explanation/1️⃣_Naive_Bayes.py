@@ -19,13 +19,13 @@ st.markdown(
   2. Klasifikasi Teks Baru: Gunakan teorema Bayes untuk menghitung probabilitas teks baru di setiap kelas ujaran kebencian dan prediksi kelas dengan probabilitas tertinggi.'''
 )
 
+st.markdown("<hr>", unsafe_allow_html=True)
 st.markdown(
   '''**Teorema Bayes** memberikan cara untuk menghitung probabilitas dari suatu kejadian berdasarkan pengetahuan sebelumnya. Teorema Bayes dinyatakan sebagai berikut:'''
 )
 st.latex(bayes_formula)
 st.markdown(
-  '''di mana:
-  - P(c|x) adalah probabilitas kelas c jika teks x, disebut sebagai probabilitas posterior
+  '''- P(c|x) adalah probabilitas kelas c jika teks x, disebut sebagai probabilitas posterior
   - P(x|c) adalah probabilitas teks x jika kelas c, disebut sebagai probabilitas likelihood
   - P(c) adalah probabilitas kelas c, disebut sebagai probabilitas prior
   - P(x) adalah probabilitas teks x, disebut sebagai probabilitas evidence
@@ -44,4 +44,3 @@ nb_data = {
 }
 nb_df = pd.DataFrame(nb_data)
 st.table(nb_df)
-st.markdown("<hr>", unsafe_allow_html=True)
