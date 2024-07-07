@@ -31,7 +31,12 @@ st.markdown(
 st.text('1. Gini Impurity Formula')
 gini_formula = r"Gini(p) = 1 - \sum_{i=1}^{C} p_i^2"
 st.latex(gini_formula)
-st.markdown('''Mengukur seberapa sering elemen akan diklasifikasikan salah.\n''')
+st.markdown(
+  '''
+  Mengukur seberapa sering elemen akan diklasifikasikan salah.\n
+  Kami menggunakan rumus ini untuk menghitung Gini Impurity dari setiap atribut dan memilih atribut dengan Gini Impurity terendah sebagai atribut pemisah.
+  '''
+)
 
 st.text("2. Entropy Formula")
 entropy_formula = r"Entropy(p) = - \sum_{i=1}^{C} p_i \log_2(p_i)"
