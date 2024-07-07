@@ -28,7 +28,7 @@ dt_data = {
     'Class': ['hateful', 'non-hateful', 'accuracy', 'macro avg', 'weighted avg'],
     'Precision': [0.77, 0.95, '', 0.86, 0.91],
     'Recall': [0.82, 0.93, '', 0.87, 0.90],
-    'F1-Score': [0.79, 0.94, '', 0.87, 0.91],
+    'F1-Score': [0.79, 0.94, 0.90, 0.87, 0.91],
     'Support': [336, 1164, 1500, 1500, 1500]
 }
 dt_df = pd.DataFrame(dt_data)
@@ -42,7 +42,7 @@ svc_data = {
     'Class': ['hateful', 'non-hateful', 'accuracy', 'macro avg', 'weighted avg'],
     'Precision': [0.63, 0.86, '', 0.75, 0.81],
     'Recall': [0.46, 0.93, '', 0.69, 0.83],
-    'F1-Score': [0.54, 0.89, '', 0.71, 0.82],
+    'F1-Score': [0.54, 0.89, 0.83, 0.71, 0.82],
     'Support': [325, 1175, 1500, 1500, 1500]
 }
 svc_df = pd.DataFrame(svc_data)
@@ -56,7 +56,7 @@ ada_data = {
     'Class': ['hateful', 'non-hateful', 'accuracy', 'macro avg', 'weighted avg'],
     'Precision': [0.79, 0.85, '', 0.82, 0.83],
     'Recall': [0.38, 0.97, '', 0.68, 0.84],
-    'F1-Score': [0.52, 0.90, '', 0.71, 0.82],
+    'F1-Score': [0.52, 0.90, 0.84, 0.71, 0.82],
     'Support': [333, 1167, 1500, 1500, 1500]
 }
 ada_df = pd.DataFrame(ada_data)

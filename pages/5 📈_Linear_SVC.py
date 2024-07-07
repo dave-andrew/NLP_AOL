@@ -79,7 +79,7 @@ svc_data = {
     'Class': ['hateful', 'non-hateful', 'accuracy', 'macro avg', 'weighted avg'],
     'Precision': [0.63, 0.86, '', 0.75, 0.81],
     'Recall': [0.46, 0.93, '', 0.69, 0.83],
-    'F1-Score': [0.54, 0.89, '', 0.71, 0.82],
+    'F1-Score': [0.54, 0.89, 0.83, 0.71, 0.82],
     'Support': [325, 1175, 1500, 1500, 1500]
 }
 svc_df = pd.DataFrame(svc_data)

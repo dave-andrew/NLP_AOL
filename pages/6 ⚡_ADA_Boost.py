@@ -60,7 +60,7 @@ ada_data = {
     'Class': ['hateful', 'non-hateful', 'accuracy', 'macro avg', 'weighted avg'],
     'Precision': [0.79, 0.85, '', 0.82, 0.83],
     'Recall': [0.38, 0.97, '', 0.68, 0.84],
-    'F1-Score': [0.52, 0.90, '', 0.71, 0.82],
+    'F1-Score': [0.52, 0.90, 0.84, 0.71, 0.82],
     'Support': [333, 1167, 1500, 1500, 1500]
 }
 ada_df = pd.DataFrame(ada_data)

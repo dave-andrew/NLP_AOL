@@ -67,7 +67,7 @@ dt_data = {
     'Class': ['hateful', 'non-hateful', 'accuracy', 'macro avg', 'weighted avg'],
     'Precision': [0.77, 0.95, '', 0.86, 0.91],
     'Recall': [0.82, 0.93, '', 0.87, 0.90],
-    'F1-Score': [0.79, 0.94, '', 0.87, 0.91],
+    'F1-Score': [0.79, 0.94, 0.90, 0.87, 0.91],
     'Support': [336, 1164, 1500, 1500, 1500]
 }
 dt_df = pd.DataFrame(dt_data)
