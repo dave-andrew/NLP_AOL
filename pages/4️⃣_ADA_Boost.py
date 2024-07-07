@@ -21,8 +21,8 @@ st.markdown(
   1. Memfokuskan pada data yang sulit: Memberikan bobot lebih tinggi pada data yang salah diklasifikasikan untuk melatih *weak learner* selanjutnya.
   2. Menggabungkan *weak learner*: Menggabungkan prediksi dari beberapa *weak learner* untuk mendapatkan hasil klasifikasi yang lebih akurat.
   
-  Pertama-tama, semua data diberi bobot yang sama. Yaitu setiap data memiliki bobot 1/N, di mana N adalah jumlah total data.
-  Kemudian, model *weak learner* pertama dibuat dan diuji pada data. 
+  Pertama-tama, semua data diberi bobot yang sama. Yaitu setiap data memiliki bobot 1/N, di mana N adalah jumlah total data.\n
+  Kemudian, model *weak learner* pertama dibuat dan diuji pada data. \n
   Dengan menggunakan rumus error sebagai berikut:
   '''
 )
