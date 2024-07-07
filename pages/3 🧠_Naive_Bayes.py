@@ -25,7 +25,8 @@ st.markdown(
 )
 st.latex(bayes_formula)
 st.markdown(
-  '''- P(c|x) adalah probabilitas kelas c jika teks x, disebut sebagai probabilitas posterior
+  '''
+  - P(c|x) adalah probabilitas kelas c jika teks x, disebut sebagai probabilitas posterior
   - P(x|c) adalah probabilitas teks x jika kelas c, disebut sebagai probabilitas likelihood
   - P(c) adalah probabilitas kelas c, disebut sebagai probabilitas prior
   - P(x) adalah probabilitas teks x, disebut sebagai probabilitas evidence
