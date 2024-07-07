@@ -7,7 +7,7 @@ st.set_page_config(
 )
 st.title('📚 Training Models')
 st.subheader('Decision Tree')
-st.image('Confusion_Decision.png', caption='Decision Tree Confusion Matrix')
+st.image('Cassets/confusion_matrix/onfusion_Decision.png', caption='Decision Tree Confusion Matrix')
 st.markdown(
   '''**Decision Tree** adalah algoritma klasifikasi yang bekerja dengan cara membagi data menjadi subset-subset berdasarkan aturan tertentu, menghasilkan struktur pohon yang bercabang.
 
@@ -30,7 +30,7 @@ st.table(dt_df)
 st.markdown("<hr>", unsafe_allow_html=True)
 
 st.subheader('Naive Bayes')
-st.image('Confusion_Naive.png', caption='Naive Bayes Confusion Matrix')
+st.image('assets/confusion_matrix/Confusion_Naive.png', caption='Naive Bayes Confusion Matrix')
 st.markdown(
   '''**Naive Bayes** adalah algoritma klasifikasi probabilistik yang sederhana dan efektif untuk klasifikasi teks.
 
@@ -52,7 +52,7 @@ st.table(nb_df)
 st.markdown("<hr>", unsafe_allow_html=True)
 
 st.subheader('Linear SVC')
-st.image('Confusion_Linear_SVC.png', caption='Linear SVC Confusion Matrix')
+st.image('assets/confusion_matrix/Confusion_Linear_SVC.png', caption='Linear SVC Confusion Matrix')
 st.markdown(
   '''**Linear SVC (Support Vector Classification)** adalah algoritma klasifikasi yang digunakan untuk memisahkan data menjadi dua kelas atau lebih. Algoritma ini bekerja dengan mencari hyperplane linier yang memisahkan data dengan margin maksimum.
 
@@ -74,7 +74,7 @@ st.table(svc_df)
 st.markdown("<hr>", unsafe_allow_html=True)
 
 st.subheader('ADA Boost')
-st.image('Confusion_ADA.png', caption='ADA Boost Confusion Matrix')
+st.image('assets/confusion_matrix/Confusion_ADA.png', caption='ADA Boost Confusion Matrix')
 
 formula_1 = r'weight = \frac{1}{2} \times \ln \left( \frac{1 - error}{error} \right)'
 formula_2 = r'weight = weight \times e^{weight}'
@@ -136,7 +136,7 @@ st.table(ada_df)
 st.markdown("<hr>", unsafe_allow_html=True)
 
 st.subheader('Decision Tree')
-st.image('Confusion_ADA.png', caption='Decision Tree Confusion Matrix')
+st.image('assets/confusion_matrix/Confusion_ADA.png', caption='Decision Tree Confusion Matrix')
 st.markdown(
   '''**AdaBoost (Adaptive Boosting)** adalah algoritma klasifikasi yang meningkatkan kinerja *weak learner* (algoritma klasifikasi sederhana).
 

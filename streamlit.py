@@ -42,11 +42,9 @@ tweet = st.text_area('Enter a tweet:')
 
 # make a dropdown to choose the model
 modelType = st.selectbox('Choose a model:', [
-    # 'Decision Tree',
-    # 'Linear Regression', 
     'Naive Bayes', 
     'Linear SVC', 
-    'ADA Boost', 
+    # 'ADA Boost', 
     # 'Random Forest'
     ])
 
@@ -55,18 +53,16 @@ model = None
 if st.button('Predict Hate Speech'):
     
     # load the model
-    if modelType == 'ADA Boost':
-        model = joblib.load('adaboost.joblib')
-    # elif modelType == 'Decision Tree':
-    #     model = joblib.load('decisionTree (1).pkl')
-    # elif modelType == 'Linear Regression':
-    #     model = joblib.load('linear.pkl')
-    elif modelType == 'Naive Bayes':
-        model = joblib.load('naive.joblib')
+    if modelType == 'Naive Bayes':
+        model = joblib.load('assets/models/naive.joblib')
     elif modelType == 'Linear SVC':
-        model = joblib.load('linearsvc.joblib')
+        model = joblib.load('assets/models/linearsvc.joblib')
+    # elif modelType == 'Decision Tree':
+    #     model = joblib.load('decisionTree.joblib')
+    # elif modelType == 'ADA Boost':
+    #     model = joblib.load('assets/models/adaboost.joblib')
     # elif modelType == 'Random Forest':
-    #     model = pickle.load('rfc (1).pkl')
+    #     model = pickle.load('rfc.joblib')
     else:
         st.write('Model not found')
     
@@ -82,4 +78,3 @@ if st.button('Predict Hate Speech'):
     # display the prediction
     # st.write(f'The paragraph is a {prediction}')
     
-    # test
