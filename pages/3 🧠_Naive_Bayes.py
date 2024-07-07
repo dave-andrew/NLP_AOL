@@ -5,10 +5,10 @@ bayes_formula = r"P(c|x) = \frac{P(x|c) \cdot P(c)}{P(x)}"
 
 st.set_page_config(
     page_title="Naive Bayes",
-    page_icon="1️⃣"
+    page_icon="🧠"
 )
 
-st.title('1️⃣ Naive Bayes')
+st.title('🧠 Naive Bayes')
 
 st.image('assets/confusion_matrix/Confusion_Naive.png', caption='Naive Bayes Confusion Matrix')
 st.markdown(

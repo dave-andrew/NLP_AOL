@@ -3,9 +3,9 @@ import pandas as pd
 
 st.set_page_config(
     page_title="ADA Boost",
-    page_icon="4️⃣"
+    page_icon="⚡"
 )
-st.title('4️⃣ ADA Boost')
+st.title('⚡ ADA Boost')
 
 st.image('assets/confusion_matrix/Confusion_ADA.png', caption='ADA Boost Confusion Matrix')
 

@@ -3,9 +3,9 @@ import pandas as pd
 
 st.set_page_config(
     page_title="Linear SVC",
-    page_icon="3️⃣"
+    page_icon="📈"
 )
-st.title('3️⃣ Linear SVC')
+st.title('📈 Linear SVC')
 
 
 formula1 = r'\min_{w, b, \xi} \frac{1}{2} \|w\|^2 + C \sum_{i=1}^n \xi_i'

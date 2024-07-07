@@ -4,10 +4,10 @@ import pandas as pd
 
 st.set_page_config(
     page_title="Decision Tree",
-    page_icon="2️⃣"
+    page_icon="🌳"
 )
 
-st.title('2️⃣ Decision Tree')
+st.title('🌳 Decision Tree')
 
 st.image('assets/confusion_matrix/Confusion_Decision.png', caption='Decision Tree Confusion Matrix')
 
