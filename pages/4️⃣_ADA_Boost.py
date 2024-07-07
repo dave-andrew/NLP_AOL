@@ -64,18 +64,3 @@ ada_data = {
 }
 ada_df = pd.DataFrame(ada_data)
 st.table(ada_df)
-
-# Decision Tree
-st.markdown("<hr>", unsafe_allow_html=True)
-
-st.subheader('Decision Tree')
-st.image('assets/confusion_matrix/Confusion_ADA.png', caption='Decision Tree Confusion Matrix')
-st.markdown(
-  '''**AdaBoost (Adaptive Boosting)** adalah algoritma klasifikasi yang meningkatkan kinerja *weak learner* (algoritma klasifikasi sederhana).
-
-  **Cara Kerja:**
-  1. Memfokuskan pada data yang sulit: Memberikan bobot lebih tinggi pada data yang salah diklasifikasikan untuk melatih *weak learner* selanjutnya.
-  2. Menggabungkan *weak learner*: Menggabungkan prediksi dari beberapa *weak learner* untuk mendapatkan hasil klasifikasi yang lebih akurat.
-  
-  :green-background[Accuracy: 84.06%]'''
-)
