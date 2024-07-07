@@ -62,6 +62,7 @@ st.markdown(
   
   :green-background[Accuracy: 82.53%]'''
 )
+
 svc_data = {
     'Class': ['hateful', 'non-hateful', 'accuracy', 'macro avg', 'weighted avg'],
     'Precision': [0.63, 0.86, '', 0.75, 0.81],
