@@ -28,28 +28,32 @@ st.markdown(
   '''
 )
 
-st.text('Gini Impurity Formula')
+st.text('1. Gini Impurity Formula')
 gini_formula = r"Gini(p) = 1 - \sum_{i=1}^{C} p_i^2"
 st.latex(gini_formula)
-st.text('Mengukur seberapa sering elemen akan diklasifikasikan salah.')
+st.markdown('''Mengukur seberapa sering elemen akan diklasifikasikan salah.\n''')
 
-st.text("Entropy Formula")
+st.text("2. Entropy Formula")
 entropy_formula = r"Entropy(p) = - \sum_{i=1}^{C} p_i \log_2(p_i)"
 st.latex(entropy_formula)
-st.text('Mengukur seberapa tidak teratur data.')
+st.markdown('''Mengukur seberapa tidak teratur data.\n''')
 
-st.text("Information Gain Formula")
+st.text("3. Information Gain Formula")
 info_gain_formula = r"IG(A) = Entropy(parent) - \sum_{k=1}^{K} \frac{N_k}{N} \cdot Entropy(k)"
 st.latex(info_gain_formula)
-st.text('Mengukur seberapa banyak informasi yang diperoleh setelah membagi data berdasarkan atribut tertentu.')
+st.markdown('''Mengukur seberapa banyak informasi yang diperoleh setelah membagi data berdasarkan atribut tertentu.\n''')
 
-st.text("Mean Squared Error Formula")
+st.text("4. Mean Squared Error Formula")
 mse_formula = r"MSE = \frac{1}{N} \sum_{i=1}^{N} (y_i - \bar{y})^2"
 st.latex(mse_formula)
-st.text('Mengukur seberapa dekat prediksi dengan nilai sebenarnya.')
+st.markdown('''Mengukur seberapa dekat prediksi dengan nilai sebenarnya.\n''')
 
 st.markdown(
   '''
+  Ulangi proses pemecahan secara rekursif untuk setiap subset yang dibuat oleh pemecahan hingga kriteria penghentian terpenuhi, seperti kedalaman maksimum, sampel minimum per daun, atau tidak ada peningkatan lebih lanjut dalam kriteria pemecahan.
+  
+  Dalam kasus ini, kita melakukan klasifikasi, sehingga label yang dipilih adalah label mayoritas dari setiap daun.
+  
   :green-background[Accuracy: 90%]
   '''
 )
