@@ -33,6 +33,8 @@ st.markdown(
   
   Teorema Bayes memungkinkan kita untuk menghitung probabilitas kelas ujaran kebencian berdasarkan kemunculan kata-kata dalam teks tersebut.
 
+  Untuk mengatasi probabilitas nol dan meningkatkan kinerja model, umumnya digunakan teknik **Laplace Smoothing**. Teknik ini menambahkan nilai kecil, biasanya 1, ke setiap kemunculan kata dalam setiap kelas.
+
   :green-background[Accuracy: 81.73%]'''
 )
 
