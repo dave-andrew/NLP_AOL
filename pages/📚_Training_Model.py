@@ -75,34 +75,51 @@ st.markdown("<hr>", unsafe_allow_html=True)
 
 st.subheader('ADA Boost')
 st.image('Confusion_ADA.png', caption='ADA Boost Confusion Matrix')
-st.markdown(
-    r'''
-    **AdaBoost (Adaptive Boosting)** adalah algoritma klasifikasi yang meningkatkan kinerja *weak learner* (algoritma klasifikasi sederhana).
 
-    **Cara Kerja:**
-    1. Memfokuskan pada data yang sulit: Memberikan bobot lebih tinggi pada data yang salah diklasifikasikan untuk melatih *weak learner* selanjutnya.
-    2. Menggabungkan *weak learner*: Menggabungkan prediksi dari beberapa *weak learner* untuk mendapatkan hasil klasifikasi yang lebih akurat.
-    
-    Pertama-tama, semua data diberi bobot yang sama. Yaitu setiap data memiliki bobot 1/N, di mana N adalah jumlah total data.
-    Kemudian, model *weak learner* pertama dibuat dan diuji pada data. 
-    Dengan menggunakan rumus error sebagai berikut:
-    \[
-    \text{weight} = \frac{1}{2} \ln \left( \frac{1 - \text{error}}{\text{error}} \right)
-    \]
-    Bobot pada data yang salah akan dikalkulasi kembali dengan rumus:
-    \[
-    \text{weight} = \text{weight} \times e^{\text{weight}}
-    \]
-    Kalau dikalkulasikan, total bobot sampel terkadang tidak sama dengan 1. 
-    Maka, bobot sampel akan dinormalisasi dengan rumus:
-    \[
-    \text{sample weight} = \frac{\text{sample weight}}{\text{total sample weight}}
-    \]
-    Proses ini diulang hingga mencapai jumlah *weak learner* yang diinginkan.
-    Untuk prediksinya, bobot dari *weak learner* akan dijumlahkan.
-    
-    :green-background[Accuracy: 84.06%]
-    '''
+formula_1 = r'weight = \frac{1}{2} \times \ln \left( \frac{1 - error}{error} \right)'
+formula_2 = r'weight = weight \times e^{weight}'
+formula_3 = r'sample weight = \frac{sample weight}{total sample weight}'
+
+st.markdown(
+  '''
+  **AdaBoost (Adaptive Boosting)** adalah algoritma klasifikasi yang meningkatkan kinerja *weak learner* (algoritma klasifikasi sederhana).
+
+  **Cara Kerja:**
+  1. Memfokuskan pada data yang sulit: Memberikan bobot lebih tinggi pada data yang salah diklasifikasikan untuk melatih *weak learner* selanjutnya.
+  2. Menggabungkan *weak learner*: Menggabungkan prediksi dari beberapa *weak learner* untuk mendapatkan hasil klasifikasi yang lebih akurat.
+  
+  Pertama-tama, semua data diberi bobot yang sama. Yaitu setiap data memiliki bobot 1/N, di mana N adalah jumlah total data.
+  Kemudian, model *weak learner* pertama dibuat dan diuji pada data. 
+  Dengan menggunakan rumus error sebagai berikut:
+  '''
+)
+
+st.latex(formula_1)
+
+st.markdown(
+  '''
+  Weight pada data yang salah akan dikalkulasi kembali dengan rumus:
+  '''
+)
+
+st.latex(formula_2)
+
+st.markdown(
+  '''
+  Kalau dikalkulasikan, total sample weight terkadang tidak sama dengan 1. 
+  Maka, sample weight akan dinormalisasi dengan rumus:
+  '''
+)
+
+st.latex(formula_3)
+
+st.markdown(
+  '''
+  Proses ini diulang hingga mencapai jumlah *weak learner* yang diinginkan.
+  Untuk prediksinya, bobot dari *weak learner* akan dijumlahkan.
+  
+  :green-background[Accuracy: 84.06%]
+  '''
 )
 
 ada_data = {
